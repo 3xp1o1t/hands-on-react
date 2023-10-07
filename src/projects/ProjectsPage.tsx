@@ -1,5 +1,8 @@
+import ProjectList from './ProjectList';
+import { data } from './ProjectModel';
+
 function ProjectsPage() {
-  return <div>ProjectsPage</div>;
+  return <ProjectList projects={data} />;
 }
 
 export default ProjectsPage;
