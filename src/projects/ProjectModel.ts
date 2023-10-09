@@ -13,7 +13,8 @@ export const data: ProjectProps[] = [
   {
     id: 1,
     name: 'Fulanito',
-    description: 'Not this time',
+    description:
+      'Not this time, laborum adf asdf we sa f t  qw sadf as f w er as dasf  ',
     imageUrl: '/assets/placeimg_500_300_arch1.jpg',
     contractTypeId: 3,
     contractSignedOn: new Date('2013-08-04T22:39:41.473Z'),

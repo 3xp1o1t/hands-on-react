@@ -9,21 +9,21 @@ function ProjectCard({ project }: { project: ProjectProps }) {
   };
 
   return (
-    <>
+    <div>
       <img
         src={project.imageUrl}
         alt={project.name}
-        className="h-48 w-full object-cover"
+        className="h-[15rem] w-full object-cover"
       />
-      <div className="p-4 h-[16rem]">
-        <h1 className="text-xl font-bold">{project.name}</h1>
+      <div className="p-4 h-[17rem] flex flex-col justify-between">
+        <h1 className="text-xl font-bold md:text-lg">{project.name}</h1>
         <p className="text-md pt-2">{formatDescription(project.description)}</p>
         <p className="text-xl text-emerald-200 mt-2 pb-2">
           Budget : {project.budget.toLocaleString()}
         </p>
         <button
           type="submit"
-          className="mt-auto px-4 py-2 bg-slate-900 text-md font-bold hover:bg-slate-200 hover:text-black rounded"
+          className="h-16 w-20 bg-slate-900 text-md font-bold hover:bg-slate-200 hover:text-black rounded"
           onClick={() => {
             handleEditClick(project);
           }}
@@ -31,7 +31,7 @@ function ProjectCard({ project }: { project: ProjectProps }) {
           Edit
         </button>
       </div>
-    </>
+    </div>
   );
 }
 
